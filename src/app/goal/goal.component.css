@@ -1,0 +1,48 @@
+body{
+  background-color:aliceblue;
+  color: blue;
+}
+@keyframes h1{
+  0%{color:blue;}
+  25%{color:red;transform:scale(1.2);transform:rotateY(45deg);text-shadow:2px 2px 2px red;}
+  50%{color:green;transform:scale(1.5);transform:rotateY(0deg);}
+  100%{color:black;transform:scale(0.5);transform:rotate(-25deg);text-shadow:2px 2px 2px rgb(12, 11, 11);}
+}
+h1{
+  color:blue;
+  text-align:center;
+  animation-name:h1;
+  animation-duration:40s;
+  transition:ease-in-out;
+  animation-iteration-count: infinite;
+  /* animation-delay:4s all ease-in-out; */
+}
+
+h1::first-letter{
+  transform:scale(0.5);
+  } 
+  /* @keyframes li{
+    0%{left:30%;transform:rotateX(360deg);}
+    25%{left:45%;background-color:grey;color:white;transform:rotateX(-360deg);}
+    50%{left:50%;background-color:black;transform:rotateY(-360deg);}
+    75%{right:45%;background-color:purple;transform:rotateY(360deg);}
+    100%{right:30%;background-color:black;color:white;transform:rotateZ(200deg);}
+  } */
+  ul{
+    position:relative;
+    /* animation: */
+    animation-name:li;
+    animation-duration:40s;
+    animation-iteration-count:infinite;
+    animation-delay:5s;
+    animation-play-state: running;
+    width: 300px;
+    transition-property: all;
+    transition: ease-in-out;
+    /* transition-delay:  */
+  }
+  span{
+    color:blue;
+    text-decoration: underline red;
+    text-transform:uppercase;
+  }
